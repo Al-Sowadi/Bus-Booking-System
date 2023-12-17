@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Book bus tickets online for your next journey. Find buses from your location to your destination with our easy-to-use system.">
+    <meta name="keywords" content="bus booking, book a ticket, online bus reservation, bus tickets">
+    <meta name="author" content="Louie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Confirm Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bus Booking System</h1>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </header>
+
+    <main>
+        <section id="booking-form">
+            <h2>Confirm Booking</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="passengers">Number of Passengers:</label>
+                <input type="number" id="passengers" name="passengers" required>
+                <p id="passengersError" class="error-message"></p>
+                <button id="confirmBtn" type="button">Confirm Booking</button>
+            </form>
+        </section>
+
+        <section class="billing-section" id="billing-section">
+            <h2>Booking Bill</h2>
+            <!-- Customer information -->
+            <p>Name: <span id="billName"></span></p>
+            <p>Email: <span id="billEmail"></span></p>
+            <p>Phone: <span id="billPhone"></span></p>
+            <!-- Bus information -->
+            <h3>Bus Details</h3>
+            <p>From: <span id="busFrom"></span></p>
+            <p>To: <span id="busTo"></span></p>
+            <p>Departure Date: <span id="departureDate"></span></p>
+            <p>Departure Time: <span id="departureTime"></span></p>
+            <p id="arrivalTime">Arrival Time: </p>
+            <p>Cost: <span id="busCost"></span></p>
+            <p>Duration: <span id="busDuration"></span></p>
+            <p>Total Cost: <span id="billTotal"></span></p>
+            <p>Ticket ID: <span id="ticketId"></span></p>
+        </section>
+        <button class ="printButton" id="printButton">Download</button>
+
+    </main>
+    <script src="booking.js"></script>
+
+</body>
+</html>

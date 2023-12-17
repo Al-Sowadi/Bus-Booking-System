@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    margin: 2rem;
+}
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.billing-section {
+    background-color: #fff;
+    border: 1px solid #000;
+    display: none;
+    padding: 20px;
+    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Maximum width on larger screens */
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.printButton{
+    display: none;
+    padding: 20px;
+    align-items: center;
+    width: 100%; /* Full width on small screens */
+    max-width: 350px; /* Maximum width on larger screens */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+    margin: 0 auto;
+}
+
+.billing-section h2 {
+    text-align: center;
+}
+
+.billing-section h3 {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.billing-section p {
+    margin: 5px;
+}
+
+.billing-section span {
+    font-weight: bold;
+}
+
+/* Media Query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    input {
+        padding: 5px;
+    }
+
+    .billing-section {
+        padding: 10px;
+        width: 100%;
+        max-width: none;
+    }
+}
+.bus-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.bus-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.departure-info, .arrival-info, .cost-info, .duration-info {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.bookBtn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bookBtn:hover {
+    background-color: #0056b3;
+}
